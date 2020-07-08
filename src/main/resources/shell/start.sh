@@ -60,7 +60,7 @@ else
 fi
 
 echo -e "Starting the $SERVER_NAME ...\c"
-nohup java $JAVA_AP_OPTS $JAVA_OPTS $JAVA_MEM_OPTS $JAVA_DEBUG_OPTS $JAVA_JMX_OPTS -classpath $CONF_DIR:$LIB_JARS cn.touna.haodai.webapp.BootApplication > $STDOUT_FILE 2>&1 &
+nohup java $JAVA_AP_OPTS $JAVA_OPTS $JAVA_MEM_OPTS $JAVA_DEBUG_OPTS $JAVA_JMX_OPTS -classpath $CONF_DIR:$LIB_JARS com.zyz.software.tool.BootApplication > $STDOUT_FILE 2>&1 &
 
 COUNT=1
 while [ $COUNT -lt 1 ]; do
